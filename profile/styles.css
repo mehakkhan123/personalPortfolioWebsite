@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-image: linear-gradient(black,grey);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 30px;
+    border-bottom: 1px solid white;
+
+
+}
+nav h1{
+    border: 3px solid rgb(194, 7, 7);
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav li{
+    padding: 10px 20px;
+    font-size: larger;
+    border-left: 2px solid white;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: burlywood;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 0;
+    line-height: 0;
+    background-image: linear-gradient(grey,black);
+
+}
+
+.intro h1{
+    color: white;
+    font-size: 80px;
+}
+.intro .developer{
+    color: red;
+    font-size: 50px;
+
+}
+
+.intro button {
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: larger;
+    border: transparent;
+    color: white;
+    font-weight: bolder;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.intro button:hover{
+    background-color: rgb(211, 122, 6);
+}
+
+.about {
+    background-image: linear-gradient(rgb(80, 76, 76),rgb(155, 143, 143));
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-size: larger;
+    padding: 80 100px;   
+}
+.about h1 {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+.html, .css, .js, .ts, .nextjs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-around;
+}
+
+.html img {
+    width:300px;
+    height: 200px;
+
+}
+
+.skill{
+    width: 50%;
+    height: 15px;
+    background-color: rgb(163, 161, 161);
+}
+
+.html-skill {
+    background-color: blue;
+    width: 95%;
+    height: 15px;
+}
+
+.css img {
+    width: 220px;
+    height: 200px;
+}
+
+.css-skill {
+    background-color: blue;
+    width: 90%;
+    height: 15px;
+}
+
+.js img{
+    width: 170px;
+    height: 150px;
+}
+
+.js-skill, .ts-skill {
+    background-color: rgb(255, 208, 0);
+    width: 80%;
+    height: 15px;
+}
+
+.ts img {
+    width: 100px;
+    height: 100px;
+}
+
+.nextjs img{
+    width: 100px;
+    height: 100px;
+}
+
+.nextjs-skill {
+    background-color: red;
+    width: 10%;
+    height: 15px;
+}
+
+.project-container{
+    background-image: linear-gradient(black,grey);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.allprojects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 2px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+
+}
+.project img {
+    width: 100%;
+}
+.project h2 {
+    margin-bottom: 0;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project:hover {
+    border: 2px solid orange;
+}
+.project a:hover {
+    color: orange;
+}
+
+.contact {
+    background-image: linear-gradient(rgb(88, 82, 82),black);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+@media screen and (max-width:650px){
+    nav {
+        flex-direction: column;
+    }
+    nav h1 {
+        font-size: xx-large;
+    }
+    .intro h1{
+        font-size: 70px;
+    }
+    .intro .developer{
+        font-size: 40px;
+    
+    }
+    .about {
+        padding: 40px;
+    }
+    .allprojects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project{
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:510px){
+    nav li {
+        padding: 10px 10px;
+    }
+    .intro h1{
+        font-size: 50px;
+    }
+    .intro .developer{
+        font-size: 30px;
+    
+    }
+    .about{
+        padding: 30px;
+    }
+    
+}
+
+@media screen and (max-width:410px){
+    nav ul{
+        margin-right: 15px;
+    }
+
+    nav li {
+        padding:3px;
+        font-size: 18px;
+    }
+    .intro h1 {
+        font-size: 40px;
+    }
+    .intro .developer{
+        font-size: 25px;
+    
+    }
+    
+    
+}
+
