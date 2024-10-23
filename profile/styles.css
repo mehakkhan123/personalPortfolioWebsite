@@ -5,7 +5,9 @@ body{
 
 }
 
-
+html{
+    scroll-behaviour:smooth;
+}
 
 a{
     text-decoration: none;
